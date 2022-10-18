@@ -1,6 +1,4 @@
 
-// TODO: get everyhing ready for presentation
-
 #ifndef _INTERVAL_CPP
 #define _INTERVAL_CPP
 
