@@ -253,10 +253,11 @@ namespace Interval
                 
                 while (aux != nil)
                 {
-                    // max maintenance
+                    // max attribute maintenance
                     if (aux->max < node->max) 
                         aux->max = node->max;
 
+                    // aux pointer propagation
                     parent = aux;
                     if (node->key < aux->key) aux = aux->left;
                     else aux = aux->right;
@@ -350,6 +351,7 @@ namespace Interval
 
                 Color color = node->color;
 
+                // remove algorithm
                 if (node->left == nil)
                 {
                     sub2 = node->right;
